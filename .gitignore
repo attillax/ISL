@@ -9,5 +9,9 @@
 *.bbl
 *.blg
 
+#GNUplot
+*.gnuplot
+*.table
+
 #Temporary
 *~
