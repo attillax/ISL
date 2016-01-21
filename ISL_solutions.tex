@@ -5,6 +5,8 @@
 \usepackage{hyperref} %for links
 \usepackage{mathtools} %for math symbols
 
+\usepackage{tikz}
+
 \begin{document}
 \begin{titlepage}
 
@@ -89,7 +91,28 @@
 \end{itemize}
 \paragraph{Solution:}
 \begin{itemize}
-	\item[(a)] .
+	\item[(a)] The blue line represents the bias curve.\\
+The orange line represents the variance curve.\\
+The red line represents the training error curve.\\
+The green line represents the test error curve.\\
+The horizontal grey line represents the Bayes error  curve.\\
+The vertical grey line indicates the flexibility level corresponding to the smallest test MSE.	
+		
+	\begin{tikzpicture}[domain=0:4]
+		\draw[->] (0,-2.2) -- (0,4.2) node[above] {$Values$};
+		\draw[->] (-0.2,-2) -- (4.2,-2) node[right] {$Flexibility$};
+		\draw[color=gray][-] (0,0) -- (4.2,0) node[right] {$Bayes$};
+		\draw[color=gray][-] (1.5,-2) -- (1.5,4.2) node[right] {$min test MSE$};
+		\draw[color=red] plot[id=Train] function{((1-x/2)**3)} 
+	node[right] {$Train$};
+		\draw[color=green] plot[id=Test] function{2-2*(sin(x))} 
+	node[right] {$Test$};
+		\draw[color=blue] plot[id=Bias] function{1/sqrt(x)-2.5} 
+	node[above] {$Bias$};
+		\draw[color=orange] plot[id=Variance] function{-2 + 0.05*exp(x)} 
+	node[right] {$Variance$};
+	\end{tikzpicture}
+
 	\item[(b)] .
 \end{itemize}
 
