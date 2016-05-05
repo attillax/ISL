@@ -11,7 +11,10 @@ To compile the ISL_solutions.tex file you will need to execute the following com
 make
 ```
 
-To remove all compiled files you will need to execute the following command:
+To remove compiled .pdf you will need to execute the following command:
 ```
 make clean
 ```
+
+All tex-produced files removed automatically after the compilation
+
