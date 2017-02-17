@@ -6,15 +6,21 @@ All compiled files are placed in the root directory of the project.
 The LaTeX compilation mistakes (e.g. missed image files) are ignored.
 
 ###Available Commands
-To compile the ISL_solutions.tex file you will need to execute the following command:
+To compile the file with solutions (ISL_solutions.tex) you will need to execute 
+the following command:
 ```
 make
 ```
 
-To remove compiled .pdf you will need to execute the following command:
+To compile the file with notes (ISL_notes.tex) you will need to execute the 
+following command:
+```
+make notes
+```
+
+To remove all compiled .pdf you will need to execute the following command:
 ```
 make clean
 ```
 
 All tex-produced files removed automatically after the compilation
-
