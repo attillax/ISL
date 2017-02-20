@@ -1,5 +1,5 @@
 # ISL
-Solutions for Gareth James' "An Introduction to Statistical Learning" book
+Solutions and notes for Gareth James' "An Introduction to Statistical Learning" book
 
 ## How to use Makefile for compilation of the documents
 All compiled files are placed in the root directory of the project. 
